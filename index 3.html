@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a program to identify the smallest number in the 
+        given array.
+        A = [24, 53, 78, 91, 12]
+        </h1>
+
+
+    <script>
+        // Define the array
+        const A = [24, 53, 78, 91, 12];
+    
+        // Initialize a variable to store the smallest number
+        let smallest = A[0];
+    
+        // Loop through the array to find the smallest number
+        for (let i = 1; i < A.length; i++) {
+            if (A[i] < smallest) {
+                smallest = A[i];
+            }
+        }
+    
+        // Output the smallest number
+        document.write("<p>The smallest number in the array is: " + smallest + "</p>");
+    </script>
+    <h1>Write a program to print multiples of 5 ranging 1 to 
+        100</h1>
+    <script>
+        // Create an empty array to store the multiples of 5
+        let multiplesOf5 = [];
+    
+        // Loop through the numbers from 1 to 100
+        for (let i = 1; i <= 100; i++) {
+            // Check if the current number is a multiple of 5
+            if (i % 5 === 0) {
+                // If it is, add it to the array
+                multiplesOf5.push(i);
+            }
+        }
+    
+        // Output the multiples of 5
+        document.write("<p>Multiples of 5 from 1 to 100 are:</p>");
+        document.write("<p>" + multiplesOf5.join(", ") + "</p>");
+    </script>
+    
+</body>
+</html>
